@@ -1,15 +1,15 @@
-#Lab 1: Introduction to Python Programming Language
-#Objective
+# Lab 1: Introduction to Python Programming Language
+# Objective
 This lab introduces the foundational concepts of the Python programming language. Students learn how to declare variables, work with basic data types, understand sequence structures, and use built-in functions to inspect data types.
 
-#Tools Used
+# Tools Used
 Python 3.x
 Google Colab
 
-#Step-by-Step Process
+# Step-by-Step Process
 1. Notebook Introduction (Google colab)
    
-# PYTHON PROGRAMMING LANGUAGE
+# python programming
 2. Variable Declaration
 firstname = 'Mary'
 print(firstname)
