@@ -15,7 +15,7 @@ To understand and practise working with Python's core built-in data structures �
 |---|---|
 | Python 3 | Programming language |
 | Google Colab | Cloud-based Jupyter notebook environment |
-| Jupyter Notebook (`.ipynb`) | Lab file format |
+
 
 ---
 
@@ -158,5 +158,3 @@ Key outputs observed:
 7. **Dictionaries can hold lists as values** – this makes them useful for representing small datasets, similar to a table with columns.
 
 
-
-*Lab completed as part of the Data Science & Machine Learning course — Week 2.*
