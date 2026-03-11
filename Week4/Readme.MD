@@ -1,9 +1,10 @@
-#README – Week 4 Day 1
-#Week 4 Day 1: Data Cleaning and Exploratory Data Analysis (EDA)
-#Overview
+# README – Week 4 Day 1
+
+# Data Cleaning and Exploratory Data Analysis (EDA)
+# Overview
 This notebook focuses on data exploration, cleaning, and feature engineering using Python. The dataset was loaded and examined to understand its structure, followed by cleaning procedures such as handling duplicates and missing values. Exploratory Data Analysis (EDA) techniques were also applied to understand data distributions and relationships.
 
-#Libraries Used
+# Libraries Used
 The following Python libraries were used in this project:
 
 import pandas as pd
@@ -29,7 +30,7 @@ df.head(5)
 df.tail(5)
 These commands help display the first and last rows of the dataset.
 
-Dataset Exploration
+# Dataset Exploration
 Understanding the dataset structure is an important step before performing analysis.
 
 Dataset Information
