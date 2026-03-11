@@ -1,1 +1,143 @@
 
+# Week 4 Day 2
+# Data Visualization Using Matplotlib
+# Overview
+This notebook explores data visualization techniques using Matplotlib. Various visualization methods were demonstrated to help understand patterns, distributions, and relationships within datasets.
+
+Matplotlib is a powerful Python library used to create static, animated, and interactive visualizations.
+
+Libraries Used
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from sklearn.datasets import load_iris
+Datasets used:
+
+Breast Cancer dataset
+
+Iris dataset
+
+Qualitative Visualizations
+Bar Chart
+Bar charts are used to compare categories of data.
+
+Example:
+
+unique, counts = np.unique(y, return_counts=True)
+plt.bar(target_names, counts)
+plt.title('Bar Plot of Iris Species')
+plt.xlabel('Species')
+plt.ylabel('Count')
+Interpretation
+The bar chart shows the frequency of each Iris species in the dataset.
+
+Pie Chart
+Pie charts display the proportion of categories in a dataset.
+
+Example:
+
+plt.pie(np.bincount(y), labels=target_names, autopct='%1.1f%%')
+plt.title('Pie Plot of Iris Species')
+Interpretation
+Each slice represents the percentage of each species in the Iris dataset.
+
+Quantitative Visualizations
+Heatmap (Correlation Matrix)
+Heatmaps visualize relationships between variables.
+
+Example:
+
+corr_matrix = np.corrcoef(X.T)
+plt.imshow(corr_matrix, cmap='coolwarm')
+Interpretation
+The heatmap shows correlations between features such as:
+
+sepal length
+
+sepal width
+
+petal length
+
+petal width
+
+Line Plot
+Line plots are used to show trends across ordered data.
+
+Example:
+
+plt.plot(X[:, 0])
+plt.xlabel('Sample Index')
+plt.ylabel('Sepal Length (cm)')
+plt.title('Line Plot of Sepal Length')
+Interpretation
+The plot shows how sepal length changes across observations.
+
+Scatter Plot
+Scatter plots show relationships between two continuous variables.
+
+Example:
+
+plt.scatter(X[y == i, 0], X[y == i, 1])
+Interpretation
+The scatter plot shows the relationship between:
+
+sepal length
+
+sepal width
+
+Different colors represent different Iris species.
+
+Box Plot
+Box plots summarize the distribution of a dataset.
+
+They show:
+
+median
+
+quartiles
+
+outliers
+
+Interpretation
+The box plot visualizes the distribution of petal length for each Iris species.
+
+Violin Plot
+Violin plots provide a more detailed distribution view compared to box plots.
+
+Interpretation
+The violin plot shows the density distribution of petal width across species.
+
+Histogram
+Histograms show the distribution of numerical data.
+
+Example:
+
+plt.hist(X[:, 0], bins=20)
+plt.title('Histogram of Sepal Length')
+Interpretation
+The histogram shows the frequency distribution of sepal length values.
+
+Saving Dataset
+The Iris dataset was converted to a DataFrame and saved as a CSV file.
+
+df.to_csv('iris_dataset.csv', index=False)
+Conclusion
+This notebook demonstrates multiple data visualization techniques using Matplotlib, including:
+
+Bar charts
+
+Pie charts
+
+Heatmaps
+
+Line plots
+
+Scatter plots
+
+Box plots
+
+Violin plots
+
+Histograms
+
+These visualizations help analysts better understand data patterns and relationships.
