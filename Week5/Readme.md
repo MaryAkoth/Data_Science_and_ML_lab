@@ -127,6 +127,3 @@ Creating meaningful visualizations
 
 These skills are essential for preparing data before building machine learning models.
 
-
-
-Copied from: Assignment Instructions Guide - <https://chatgpt.com/c/699767c4-cac0-8333-81d5-b36d59e00653>
